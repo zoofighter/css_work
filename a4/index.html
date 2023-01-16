@@ -1,3 +1,4 @@
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,34 +31,68 @@
 <html>
     <head>
         <title>Make a better day</title>
-        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <meta charset="utf-8"/>
     </head>
     <body>
-        <span class='js-temp'></span>
+        <!-- <div id="login-form"> -->
+        <form id="login-form">
+            <input required max="15" type="text" placeholder="What is your name?">
+            <!-- <button>Log In </button> -->
+            <input type="submit" value="Log in">
+        </form>
+
+        <h2 id="clock">00:00</h2>
+        <form id="todo-form">
+
+            <input type="text" value="Write a Todo and press Enter">
+        </form>
+        <ul id="todo-list"></ul>
+            
+
+
+        <h1 id="greeting" class="hidden"></h1>
+
+
+        <div id="qoute">
+            <span></span>
+            <span></span>
+        </div>
+        <!-- <img src="img/0.jpeg" /"> -->
+
+        
+
+        
+
+        <!-- <span class='js-temp'></span>
         <span class='js-place'></span>
 
         <div class="js-clock">
-            <h1>00:00</h1>
+            <h1>00:00</h1>.valu
         </div>
         <h4 class="js-greetings greetings"></h4>
 
         <h5>Write down things to do today</h5>
 
-        <form class="js-form form">
+        <!-- <form class="js-form form">
             <input type='text' placeholder="What is your name?"/>
-        </form>
-        
-        <form class="js-toDoForm">
+        </form> -->   
+        <!-- <form class="js-toDoForm">
             <input type="text" placeholder=""/>
-        </form>
-        <ul class="js-toDoList">
-        </ul>
+        </form> -->
+        <!-- <ul class="js-toDoList">
+        </ul> --> -->
+        <!-- <a href="http://yahoo.com">aaa</a> -->
 
-        <script src="clock.js"></script>
-        <script src="greeting.js"></script>
-        <script src="todo.js"></script>
+
+        <script src="js/qoutes.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <!-- <script src="js/clock.js"></script>  -->
+        <!-- <script src="todo.js"></script>
         <script src="bg.js"></script>
-        <script src="weather.js"></script>
+        <script src="weather.js"></script>  -->        
+        <!-- <script src="app.js"></script> -->
     </body>
 </html>

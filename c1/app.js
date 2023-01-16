@@ -1,3 +1,5 @@
+// css & design 
+
 const switcher = document.querySelector('#theme-switcher')
 const doc = document.firstElementChild
 
