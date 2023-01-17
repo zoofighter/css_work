@@ -1,6 +1,10 @@
 const loginForm = document.querySelector('#login-form');
 const loginInput = document.querySelector('#login-form input');
 const loginButton = document.querySelector('#login-form button');
+const greeting = document.querySelector('#greeting');
+const link = document.querySelector('a');
+
+const USERNAME_KEY = 'userkey';
 
 console.log(loginForm);
 console.log(loginInput.value);
@@ -10,11 +14,40 @@ function onLoginButtonClick() {
 
 function onLoginSubmit(event) {
     event.preventDefault();
+    loginForm.classList.add('hidden');
     console.log('value:', loginInput.value);
-    console.log(loginInput.value);
+    const username = loginInput.value
+    localStorage.setItem('USERNAME_KEY',username);
+    greeting.innerText = `hello ${username}`
+    greeting.classList.remove('hidden');
+
+    //constloginInput.value);
   }
   
-loginForm.addEventListener('submit', onLoginSubmit);
+const savedUserName = localStorage.getItem('USERNAME_KEY');
+console.log(savedUserName);
+console.log("aa");
+
+
+
+if (savedUserName === null) {
+  loginForm.classList.remove('hidden');
+  loginForm.addEventListener('submit', onLoginSubmit);
+} else {
+  console.log("bb");
+  loginForm.classList.add('hidden');
+  greeting.innerText = `Hello ${savedUserName}`;
+  greeting.classList.remove('hidden');
+}
+
+//loginForm.addEventListener('submit', onLoginSubmit);
+
+
+
+// function handleLinkClick(event) {
+//   console.log(event)
+//   alert("clicked!");
+// }
 
 // loginButton.addEventListener('submit', onLoginButtonClick)
 

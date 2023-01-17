@@ -2,9 +2,7 @@ body {
   background-color: beige;
 }
 
-
-
-
 .hidden {
+  background-color: rgb(161, 20, 109);
   display: none;
 }
