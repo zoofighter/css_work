@@ -1,3 +1,11 @@
+
+//https://wickies.tistory.com/75
+const print=x => console.log(x);
+
+todos = ['a','b'];
+todos.forEach((item) => console.log("this is", item));
+
+
 var a = [ "Hydrogen", "Helium", "Lithium", "Beryl­lium" ];
 var a2 = a.map(function(s){ return s.length });
 console.log(a.map( s => s.length ));
